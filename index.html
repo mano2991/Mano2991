@@ -13,20 +13,20 @@
             color: #333;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
         }
         header {
-    background: #333;
-    color: #fff;
-    margin: auto;
-    padding: 10px 20px; /* Adjusted padding to add space on the left and right */
-    border-bottom: #77aaff 3px solid;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-bottom: #77aaff 3px solid;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
         header h1, header ul {
             margin: 0;
             padding: 0;
@@ -49,9 +49,11 @@
             border-radius: 50%;
             width: 100px;
             height: 100px;
+            margin-top: 10px;
         }
         .main-content {
             display: flex;
+            flex-wrap: wrap;
             margin-top: 20px;
         }
         .left-column, .right-column {
@@ -59,6 +61,7 @@
             padding: 20px;
             border-radius: 5px;
             flex: 1;
+            margin-bottom: 20px;
         }
         .left-column {
             margin-right: 20px;
@@ -80,14 +83,26 @@
             overflow: hidden;
         }
         .bar span {
-    display: block;
-    height: 15px; /* Adjusted the height to be smaller */
-    text-align: right;
-    padding: 5px; /* Adjusted padding to fit the smaller height */
-    color: #fff;
-    background-color: #77aaff;
-    border-radius: 5px 0 0 5px;
-}
+            display: block;
+            height: 15px;
+            text-align: right;
+            padding: 5px;
+            color: #fff;
+            background-color: #77aaff;
+            border-radius: 5px 0 0 5px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .left-column {
+                margin-right: 0;
+            }
+            .main-content {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -95,11 +110,11 @@
         <div>
             <h1>Manojkumar Kumaran</h1>
             <ul>
-                <li> +91 - 7708556754</li>
-                <li> manojkumarbioinfo@gmail.com</li>
-                <li> Lab of Axon Growth and Regeneration, CSIR- CCMB, Hyderabad 500007</li>
-                <li> <a href="https://www.linkedin.com/in/manojkumar-kumaran-57991543/" style="color: #fff;">LinkedIn</a></li>
-                <li><a href="https://github.com/mano2991" style="color: #fff;">github</a></li>
+                <li>+91 - 7708556754</li>
+                <li>manojkumarbioinfo@gmail.com</li>
+                <li>Lab of Axon Growth and Regeneration, CSIR- CCMB, Hyderabad 500007</li>
+                <li><a href="https://www.linkedin.com/in/manojkumar-kumaran-57991543/" style="color: #fff;">LinkedIn</a></li>
+                <li><a href="https://github.com/mano2991" style="color: #fff;">Github</a></li>
             </ul>
         </div>
         <img src="manoj_1.jpg" alt="Manojkumar Kumaran">
