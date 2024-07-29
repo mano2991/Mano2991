@@ -72,24 +72,22 @@
         ul {
             padding-left: 20px;
         }
-        .bar-chart {
+        .skill-levels {
             margin-top: 20px;
         }
-        .bar {
+        .skill-table {
             width: 100%;
-            background-color: #ddd;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            overflow: hidden;
+            border-collapse: collapse;
         }
-        .bar span {
-            display: block;
-            height: 15px;
-            text-align: right;
-            padding: 5px;
-            color: #fff;
-            background-color: #77aaff;
-            border-radius: 5px 0 0 5px;
+        .skill-table th, .skill-table td {
+            padding: 10px;
+            text-align: left;
+        }
+        .stars {
+            color: gold;
+        }
+        .label {
+            margin-left: 10px;
         }
         @media (max-width: 768px) {
             header {
@@ -174,25 +172,89 @@
                 </ul>
                 <h3>Programming Skills</h3>
                 <ul>
-                    <li>R, Shell, Python scripting language for the past 7 years and used them for developing tools in NGS data analysis.</li>
-                    <li>Have more than 10 years of experience in Windows, Unix/Linux, Mac OS environment.</li>
-                    <li>Have 6-year experience in system hardware, networking and PC and server admin at Aravind Medical Research Foundation.</li>
-                    <li>Strong experience in MS-Office, Adobe Photoshop, Illustrator, and Lightroom.</li>
+                    <li>7 years of experience with R, Shell, and Python scripting languages, used for developing tools in NGS data analysis.</li>
+                    <li>Over 10 years of experience with Windows, Unix/Linux, and Mac OS environments.</li>
+                    <li>6 years of experience in system hardware, networking, and PC and server administration at Aravind Medical Research Foundation.</li>
+                    <li>Strong proficiency in MS Office, Adobe Photoshop, Illustrator, and Lightroom.</li>
+                    <li>2 years of experience in single-cell data analysis, including snRNA and snATAC sequencing data analysis.</li>
+                    <li>1 year of experience in Hi-C and CUT&RUN data analysis.</li>
                 </ul>
-            </section>
-            <section class="bar-chart">
-                <h2>Skill Levels</h2>
-                <div class="bar"><span style="width: 70%;">Mutation analysis</span></div>
-                <div class="bar"><span style="width: 70%;">Webpage and Database development</span></div>
-                <div class="bar"><span style="width: 90%;">Protein Structure Prediction</span></div>
-                <div class="bar"><span style="width: 90%;">Pathway Analysis</span></div>
-                <div class="bar"><span style="width: 75%;">Programming (Shell, Python and R)</span></div>
-                <div class="bar"><span style="width: 95%;">NGS data analysis</span></div>
-                <div class="bar"><span style="width: 90%;">Docker</span></div>
-                <div class="bar"><span style="width: 80%;">snRNA data analysis</span></div>
-                <div class="bar"><span style="width: 80%;">snATAC data analysis</span></div>
-                <div class="bar"><span style="width: 80%;">Trajectory analysis</span></div>
-            </section>
+                <section class="skill-levels">
+                    <h2>Skill Levels</h2>
+                    <table class="skill-table">
+                        <tr>
+                            <td>Mutation analysis</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>Good</td>
+                        </tr>
+                        <tr>
+                            <td>Webpage and Database development</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>Good</td>
+                        </tr>
+                        <tr>
+                            <td>Protein Structure Prediction</td>
+                            <td class="stars">★★★★★</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>Pathway Analysis</td>
+                            <td class="stars">★★★★★</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>Programming (Shell, Python and R)</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>Very Good</td>
+                        </tr>
+                        <tr>
+                            <td>NGS data analysis</td>
+                            <td class="stars">★★★★★</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>Docker</td>
+                            <td class="stars">★★★★★</td>
+                            <td>Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>snRNA data analysis</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>Very Good</td>
+                        </tr>
+                        <tr>
+                            <td>snATAC data analysis</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>Very Good</td>
+                        </tr>
+                        <tr>
+                            <td>Trajectory analysis</td>
+                            <td class="stars">★★★★☆</td>
+                            <td>Very Good</td>
+                        </tr>
+                    </table>
+                </section>
+                
+                <style>
+                    .skill-levels {
+                        width: 100%;
+                        margin: auto;
+                    }
+                    .skill-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                    }
+                    .skill-table th, .skill-table td {
+                        padding: 10px;
+                        text-align: left;
+                    }
+                    .stars {
+                        color: gold;
+                    }
+                    .label {
+                        margin-left: 10px;
+                    }
+                </style>
         </div>
     </div>
 </body>
